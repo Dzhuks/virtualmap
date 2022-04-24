@@ -1,0 +1,2 @@
+FLASK_APP=virtualmap.py
+FLASK_DEBUG=0

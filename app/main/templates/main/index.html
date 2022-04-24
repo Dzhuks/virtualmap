@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+    <center>
+        <img src="{{ url_for('static', filename='img/maps/Ақжайық.jpg') }}" usemap="#panel">
+    </center>
+    <map name="panel">
+        {% for area in area %}
+			<area href="{{ area.href }}" shape="circle" coords="{{ area.coords }}">
+		{% endfor %}
+    </map>
+	{% for person in persons %}
+		<table class="table table-hover">
+        <tr>
+            <td width="256px"><img src="{{ url_for('static', filename='img/persons/Ақұштап.jpg') }}"></td>
+            <td>
+                <h1>{{ person.name }} {{ person.surname }}</h1>
+                <p>{{ person.description }}</p>
+            </td>
+        </tr>
+    </table>
+	{% endfor %}
+    {% if form %}
+    	{{ wtf.quick_form(form) }}
+    <br>
+    {% endif %}
+    {% for post in posts %}
+        {% include 'main/_post.html' %}
+    {% endfor %}
+    {% include 'main/_post_navigation.html' %}
+{% endblock %}
