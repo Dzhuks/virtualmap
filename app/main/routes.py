@@ -51,9 +51,6 @@ def index():
 
     persons = db.session.query(Person).all()
 
-    for person in persons:
-        print(person.face)
-
     params = {
         "title": _('Home'),
         'persons': persons,
