@@ -7,8 +7,8 @@
         <img src="{{ url_for('static', filename='img/maps/Ақжайық.jpg') }}" usemap="#panel">
     </center>
 	<map name="panel">
-        {% for area in area %}
-			<area href="{{ area.href }}" shape="circle" coords="{{ area.coords }}">
+        {% for point in points %}
+			<area shape="circle" coords="{{ point.coords }}" href="{{ url_for('main.area', area=point.name) }}">
 		{% endfor %}
     </map>
 	<p>Ақжайық ауданы — Батыс Қазақстан облысының орталық аймағындағы әкімшілік аудан. 1997 жылға дейін "Чапаев ауданы" деп аталған.</p> 

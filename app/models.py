@@ -45,6 +45,12 @@ class Post(db.Model):
         return '<Post {}>'.format(self.body)
 
 
+class Point(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(32))
+    coords = db.Column(db.String(16))
+
+
 class Person(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(16))
