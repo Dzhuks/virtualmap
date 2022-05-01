@@ -47,8 +47,17 @@ class Post(db.Model):
 
 class Point(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(32))
+    area_name = db.Column(db.String(32))
     coords = db.Column(db.String(16))
+
+
+class Area(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    area_name = db.Column(db.String(16))
+    gen_info = db.Column(db.String(128))
+    history = db.Column(db.String(1024))
+    infrastructure = db.Column(db.String(128))
+    population = db.Column(db.Integer)
 
 
 class Person(db.Model):
