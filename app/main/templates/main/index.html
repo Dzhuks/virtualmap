@@ -50,7 +50,7 @@
 	{% for person in persons %}
 		<table class="table table-hover">
 			<tr>
-				<td width="256px"><img style='width: 256px;' src='{{ url_for("static", filename=person.face) }}'></td>
+				<td width="256px"><img style='width: 256px;' src='{{ url_for("static", filename="img/persons/" + person.face) }}'></td>
 				<td>
 					<h1>{{ person.name }} {{ person.surname }}</h1>
 					<p>{{ person.description }}</p>
