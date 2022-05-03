@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+	<h1 style="text-align: center;">{{ area.area_name }}</h1>
+
+	<h4 class="chapter">{{ _("Жалпы ақпарат") }}</h4>
+	<p>{{ area.gen_info }}</p>
+
+	<h4 class="chapter">{{ _("Тарихы") }}</h4>
+	<p>{{ area.history }}</p>
+
+	<h4 class="chapter">{{ _("Инфрақұрылым") }}</h4>
+	<p>{{ area.infrastructure }}</p>
+
+	<h4 class="chapter">{{ _("Халық саны") }}</h4>
+	<p>Тұрғындар саны 2009 жылға қарай {{ area.population }} адамды құрады</p>
+
+{% endblock app_content %}
+
+{% block styles %}
+	{{super()}}
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+{% endblock %}
