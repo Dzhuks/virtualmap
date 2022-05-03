@@ -1,17 +1,17 @@
 import logging
-from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
+from logging.handlers import RotatingFileHandler
+
+from app.extensions import db
+from config import Config
 from flask import Flask, request, current_app
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
+from flask_babel import Babel, lazy_gettext as _l
+from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 from flask_mail import Mail
-from flask_bootstrap import Bootstrap
+from flask_migrate import Migrate
 from flask_moment import Moment
-from flask_babel import Babel, lazy_gettext as _l
-from config import Config
 
-db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
 login.login_view = 'auth.login'
@@ -28,7 +28,10 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
 
     db.init_app(app)
-    migrate.init_app(app, db)
+    with app.app_context():
+        db.create_all()
+
+    migrate.init_app(app, db, render_as_batch=True)
     login.init_app(app)
     mail.init_app(app)
     bootstrap.init_app(app)

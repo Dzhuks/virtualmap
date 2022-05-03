@@ -119,9 +119,9 @@ def translate_text():
                                       request.form['dest_language'])})
 
 
-@blueprint.route("/area/<area_name>")
-def area(area_name):
-    area = db.session.query(Area).filter(Area.area_name == area_name).first()
+@blueprint.route("/area/<int:id>")
+def area(id):
+    area = db.session.query(Area).filter(Area.id == id).first()
 
     params = {
         'title': area.area_name,

@@ -9,7 +9,7 @@
     </center>
 	<map name="panel">
         {% for point in points %}
-			<area href="{{ url_for('main.area', area_name=point.area_name) }}" shape="circle" coords="{{ point.coords }}">
+			<area href="{{ url_for('main.area', id=point.area_id) }}" shape="circle" coords="{{ point.coords }}">
 		{% endfor %}
     </map>
 

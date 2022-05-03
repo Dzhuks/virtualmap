@@ -47,7 +47,7 @@ class Post(db.Model):
 
 class Point(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    area_name = db.Column(db.String(32))
+    area_id = db.Column(db.Integer, db.ForeignKey("area.id"))
     coords = db.Column(db.String(16))
 
 
