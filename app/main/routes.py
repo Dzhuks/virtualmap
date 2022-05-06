@@ -3,7 +3,7 @@ from datetime import datetime
 from app import db
 from app.main import blueprint
 from app.main.forms import PostForm, EditProfileForm
-from app.models import Post, User, Person
+from app.models import Post, User, Person, Area, Point
 from app.translate import translate
 from flask import g, flash, url_for, request, current_app, render_template, jsonify
 from flask_babel import get_locale, _
@@ -41,6 +41,10 @@ def index():
         flash(_('Your post is now live!'))
         return redirect(url_for('main.index'))
 
+    points = db.session.query(Point).all()
+
+    persons = db.session.query(Person).all()
+
     # текущее страница постов
     page = request.args.get('page', 1, type=int)
     posts = Post.query.paginate(page, current_app.config['POSTS_PER_PAGE'], False)
@@ -49,13 +53,9 @@ def index():
     prev_url = url_for('main.index', page=posts.prev_num) \
         if posts.has_prev else None
 
-    persons = db.session.query(Person).all()
-
-    for person in persons:
-        print(person.face)
-
     params = {
         "title": _('Home'),
+        "points": points,
         'persons': persons,
         'form': form,
         'posts': posts.items,
@@ -117,3 +117,14 @@ def translate_text():
     return jsonify({'text': translate(request.form['text'],
                                       request.form['source_language'],
                                       request.form['dest_language'])})
+
+
+@blueprint.route("/area/<int:id>")
+def area(id):
+    area = db.session.query(Area).filter(Area.id == id).first()
+
+    params = {
+        'title': area.area_name,
+        "area": area
+    }
+    return render_template("main/area.html", **params)
