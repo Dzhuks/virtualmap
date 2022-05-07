@@ -29,13 +29,8 @@ def before_request():
 def index():
     form = PostForm()
     if form.validate_on_submit():
-        # пытаемся определить язык поста. Если он не определен, то оставляем пустую строку
-        try:
-            language = detect(form.post.data)
-        except LangDetectException:
-            language = ''
-
-        post = Post(body=form.post.data, author=current_user, language=language)
+        lang = lang_detect(form.post.data)
+        post = Post(body=form.post.data, author=current_user, area=area, language=lang)
         db.session.add(post)
         db.session.commit()
         flash(_('Your post is now live!'))
