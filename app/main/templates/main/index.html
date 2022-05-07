@@ -65,11 +65,7 @@
     <br>
     {% endif %}
 
-    {% for post in posts %}
-        {% include 'main/_post.html' %}
-    {% endfor %}
-	
-    {% include 'main/_post_navigation.html' %}
+    {% include "main/_posts.html" %}
 {% endblock %}
 
 {% block styles %}

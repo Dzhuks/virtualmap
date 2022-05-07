@@ -39,6 +39,7 @@ class Post(db.Model):
     body = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    area_id = db.Column(db.Integer, db.ForeignKey('area.id'))
     language = db.Column(db.String(5))
 
     def __repr__(self):
@@ -58,6 +59,7 @@ class Area(db.Model):
     history = db.Column(db.String(1024))
     infrastructure = db.Column(db.String(128))
     population = db.Column(db.Integer)
+    posts = db.relationship('Post', backref='area', lazy='dynamic')
 
 
 class Person(db.Model):

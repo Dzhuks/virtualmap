@@ -3,12 +3,12 @@ from datetime import datetime
 from app import db
 from app.main import blueprint
 from app.main.forms import PostForm, EditProfileForm
+from app.main.helpers import lang_detect
 from app.models import Post, User, Person, Area, Point
 from app.translate import translate
 from flask import g, flash, url_for, request, current_app, render_template, jsonify
 from flask_babel import get_locale, _
 from flask_login import current_user, login_required
-from langdetect import detect, LangDetectException
 from werkzeug.utils import redirect
 
 
@@ -27,15 +27,12 @@ def before_request():
 @blueprint.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():
+    area = db.session.query(Area).filter(Area.area_name == "Ақжайық ауданы").first()
+
     form = PostForm()
     if form.validate_on_submit():
-        # пытаемся определить язык поста. Если он не определен, то оставляем пустую строку
-        try:
-            language = detect(form.post.data)
-        except LangDetectException:
-            language = ''
-
-        post = Post(body=form.post.data, author=current_user, language=language)
+        lang = lang_detect(form.post.data)
+        post = Post(body=form.post.data, author=current_user, area=area, language=lang)
         db.session.add(post)
         db.session.commit()
         flash(_('Your post is now live!'))
@@ -47,7 +44,7 @@ def index():
 
     # текущее страница постов
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.paginate(page, current_app.config['POSTS_PER_PAGE'], False)
+    posts = area.posts.order_by(Post.timestamp.desc()).paginate(page, current_app.config['POSTS_PER_PAGE'], False)
     next_url = url_for('main.index', page=posts.next_num) \
         if posts.has_next else None
     prev_url = url_for('main.index', page=posts.prev_num) \
@@ -119,12 +116,35 @@ def translate_text():
                                       request.form['dest_language'])})
 
 
-@blueprint.route("/area/<int:id>")
+@blueprint.route("/area/<int:id>", methods=["GET", "POST"])
 def area(id):
-    area = db.session.query(Area).filter(Area.id == id).first()
+    area = db.session.query(Area).filter(Area.id == id).first_or_404()
+    form = PostForm()
+    if form.validate_on_submit():
+        print('jj')
+        lang = lang_detect(form.post.data)
+        post = Post(body=form.post.data, author=current_user, area=area, language=lang)
+        db.session.add(post)
+        db.session.commit()
+        flash(_('Your post is now live!'))
+        print(url_for('main.area', id=area.id))
+        return redirect(url_for('main.area', id=area.id))
+
+    # навигация по постам
+    page = request.args.get('page', 1, type=int)
+    posts = area.posts.order_by(Post.timestamp.desc()).paginate(
+        page, current_app.config['POSTS_PER_PAGE'], False)
+    next_url = url_for('main.area', id=area.id, page=posts.next_num) \
+        if posts.has_next else None
+    prev_url = url_for('main.area', id=area.id, page=posts.prev_num) \
+        if posts.has_prev else None
 
     params = {
         'title': area.area_name,
-        "area": area
+        "area": area,
+        'form': form,
+        'posts': posts.items,
+        "next_url": next_url,
+        "prev_url": prev_url
     }
     return render_template("main/area.html", **params)
