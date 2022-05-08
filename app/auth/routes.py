@@ -21,11 +21,11 @@ def register():
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
-        flash(_('Congratulations, you are now a registered user!'))
+        flash(_('Тіркелу сәтті өтті!'))
         return redirect(url_for('auth.login'))
     
     params = {
-        "title": _('Register'),
+        "title": _('Тіркелу'),
         "form": form
     }
     return render_template('auth/register.html', **params)
@@ -40,7 +40,7 @@ def login():
     if form.validate_on_submit():
         user = db.session.query(User).filter(User.username == form.username.data).first()
         if user is None or not user.check_password(form.password.data):
-            flash(_("Invalid username or password"))
+            flash(_("Пайдаланушы жүйеде табылмады немесе құпиясөз қате терілді"))
             return redirect(url_for('auth.login'))
 
         login_user(user, remember=form.remember_me.data)
@@ -58,7 +58,7 @@ def login():
         return redirect(next_page)
 
     params = {
-        "title": _('Sign In'),
+        "title": _('Кіру'),
         "form": form
     }
     return render_template('auth/login.html', **params)

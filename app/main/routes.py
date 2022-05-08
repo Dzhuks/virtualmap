@@ -35,7 +35,7 @@ def index():
         post = Post(body=form.post.data, author=current_user, area=area, language=lang)
         db.session.add(post)
         db.session.commit()
-        flash(_('Your post is now live!'))
+        flash(_('Пікір қадырылды!'))
         return redirect(url_for('main.index'))
 
     points = db.session.query(Point).all()
@@ -94,7 +94,7 @@ def edit_profile():
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
         db.session.commit()
-        flash(_('Your changes have been saved.'))
+        flash(_('Өзгерістер сақталды.'))
         return redirect(url_for('main.user', username=current_user.username))
 
     elif request.method == 'GET':
@@ -102,7 +102,7 @@ def edit_profile():
         form.about_me.data = current_user.about_me
 
     params = {
-        "title": _('Edit Profile'),
+        "title": _('Парақшаны өзгерту'),
         "form": form
     }
     return render_template('main/edit_profile.html', **params)
@@ -126,7 +126,7 @@ def area(id):
         post = Post(body=form.post.data, author=current_user, area=area, language=lang)
         db.session.add(post)
         db.session.commit()
-        flash(_('Your post is now live!'))
+        flash(_('Пікір қадырылды!'))
         print(url_for('main.area', id=area.id))
         return redirect(url_for('main.area', id=area.id))
 
