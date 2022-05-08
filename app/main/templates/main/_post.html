@@ -11,7 +11,7 @@
                     {{ post.author.username }}
                 </a>
             {% endset %}
-            {{ _('%(username)s said %(when)s',
+            {{ _('%(username)s %(when)s жазды',
                 username=user_link, when=moment(post.timestamp).fromNow()) }}
             <br>
             <span id="post{{ post.id }}">{{ post.body }}</span>
@@ -22,7 +22,7 @@
                             '#post{{ post.id }}',
                             '#translation{{ post.id }}',
                             '{{ post.language }}',
-                            '{{ g.locale }}');">{{ _('Translate') }}</a>
+                            '{{ g.locale }}');">{{ _('Аудару') }}</a>
             </span>
             {% endif %}
         </td>
