@@ -54,6 +54,7 @@ class Point(db.Model):
 
 class Area(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    img = db.Column(db.String(32))
     area_name = db.Column(db.String(16))
     gen_info = db.Column(db.String(128))
     history = db.Column(db.String(1024))
