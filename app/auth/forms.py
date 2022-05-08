@@ -19,7 +19,7 @@ class RegistrationForm(FlaskForm):
     password = PasswordField(_l('Құпиясөз'), validators=[DataRequired()])
     password2 = PasswordField(
         _l('Құпиясөзді қайта теріңіз'), validators=[DataRequired(),
-                                           EqualTo('Құпиясөз')])
+                                                    EqualTo('Құпиясөз')])
     submit = SubmitField(_l('Тіркелу'))
 
     def validate_username(self, username):
