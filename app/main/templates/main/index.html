@@ -67,8 +67,3 @@
 
     {% include "main/_posts.html" %}
 {% endblock %}
-
-{% block styles %}
-	{{super()}}
-	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-{% endblock %}

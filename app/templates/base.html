@@ -18,14 +18,14 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('main.index') }}">{{ _('Home') }}</a></li>
+                    <li><a href="{{ url_for('main.index') }}" class="header_elem">{{ _('Басты бет') }}</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_anonymous %}
-                    <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }}</a></li>
+                    <li><a href="{{ url_for('auth.login') }}" class="header_elem">{{ _('Кіру') }}</a></li>
                     {% else %}
-                    <li><a href="{{ url_for('main.user', username=current_user.username) }}">{{ _('Profile') }}</a></li>
-                    <li><a href="{{ url_for('auth.logout') }}">{{ _('Logout') }}</a></li>
+                    <li><a href="{{ url_for('main.user', username=current_user.username) }}" class="header_elem">{{ _('Парақша') }}</a></li>
+                    <li><a href="{{ url_for('auth.logout') }}" class="header_elem">{{ _('Шығу') }}</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -66,4 +66,9 @@
             });
         }
     </script>
+{% endblock %}
+
+{% block styles %}
+	{{super()}}
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 {% endblock %}
