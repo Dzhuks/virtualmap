@@ -2,3 +2,31 @@
 	font-weight: bold;
 	border-bottom: 1px solid gray;
 }
+
+.content {
+	font-size: 17px;
+}
+
+.navbar {
+	/* background-color: rgb(153, 244, 214); */
+	background-color: rgb(127, 56, 194);
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-size: 17px;
+	transition-duration: 1s;
+	color: rgb(218, 214, 214);
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color:white;
+}
+
+.navbar-default .navbar-brand {
+	color: rgb(218, 214, 214);
+	transition-duration: 1s;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: white;
+}
