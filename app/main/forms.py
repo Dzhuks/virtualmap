@@ -23,5 +23,5 @@ class EditProfileForm(FlaskForm):
 
 
 class PostForm(FlaskForm):
-    post = TextAreaField(_l('koten Пікір қалдырыңыз'), validators=[DataRequired()])
+    post = TextAreaField(_l('Пікір қалдырыңыз'), validators=[DataRequired()])
     submit = SubmitField(_l('Жүктеу'))
