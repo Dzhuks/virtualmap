@@ -51,7 +51,7 @@ def index():
         if posts.has_prev else None
 
     params = {
-        "title": _('Home'),
+        "title": _('Басты бет'),
         "points": points,
         'persons': persons,
         'form': form,
@@ -121,13 +121,11 @@ def area(id):
     area = db.session.query(Area).filter(Area.id == id).first_or_404()
     form = PostForm()
     if form.validate_on_submit():
-        print('jj')
         lang = lang_detect(form.post.data)
         post = Post(body=form.post.data, author=current_user, area=area, language=lang)
         db.session.add(post)
         db.session.commit()
         flash(_('Пікір қадырылды!'))
-        print(url_for('main.area', id=area.id))
         return redirect(url_for('main.area', id=area.id))
 
     # навигация по постам
