@@ -1,1 +1,1 @@
-web: gunicorn app:virtualmap
+web: python virtualmap.py
