@@ -4,9 +4,11 @@
 {% block app_content %}
 	<h1 style="text-align: center;">{{ area.area_name }}</h1>
 
+	{% if area.img %}
 	<center>
         <img src="{{ url_for('static', filename='img/area/' + area.img) }}" usemap="#panel">
     </center>
+	{% endif %}
 
 	<h4 class="chapter">{{ _("Жалпы ақпарат") }}</h4>
 	<p>{{ area.gen_info }}</p>
