@@ -7,27 +7,27 @@ from flask_babel import _, lazy_gettext as _l
 
 
 class LoginForm(FlaskForm):
-    username = StringField(_l('Username'), validators=[DataRequired()])
-    password = PasswordField(_l('Password'), validators=[DataRequired()])
-    remember_me = BooleanField(_l('Remember Me'))
-    submit = SubmitField(_l('Sign In'))
+    username = StringField(_l('Пайдаланушы аты'), validators=[DataRequired()])
+    password = PasswordField(_l('Құпиясөз'), validators=[DataRequired()])
+    remember_me = BooleanField(_l('Есте сақтау'))
+    submit = SubmitField(_l('Кіру'))
 
 
 class RegistrationForm(FlaskForm):
-    username = StringField(_l('Username'), validators=[DataRequired()])
+    username = StringField(_l('Пайдаланушы аты'), validators=[DataRequired()])
     email = StringField(_l('Email'), validators=[DataRequired(), Email()])
-    password = PasswordField(_l('Password'), validators=[DataRequired()])
+    password = PasswordField(_l('Құпиясөз'), validators=[DataRequired()])
     password2 = PasswordField(
-        _l('Repeat Password'), validators=[DataRequired(),
-                                           EqualTo('password')])
-    submit = SubmitField(_l('Register'))
+        _l('Құпиясөзді қайта теріңіз'), validators=[DataRequired(),
+                                                    EqualTo('password')])
+    submit = SubmitField(_l('Тіркелу'))
 
     def validate_username(self, username):
         user = db.session.query(User).filter(User.username == username.data).first()
         if user is not None:
-            raise ValidationError(_('Please use a different username.'))
+            raise ValidationError(_('Басқа пайдаланушы атын таңдаңыз'))
 
     def validate_email(self, email):
         user = db.session.query(User).filter(User.email == email.data).first()
         if user is not None:
-            raise ValidationError(_('Please use a different email address.'))
+            raise ValidationError(_('Басқа email таңдаңыз'))
