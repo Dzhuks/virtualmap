@@ -1,14 +1,17 @@
-from app import db
+from flask_babel import _, lazy_gettext as _l
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import ValidationError, DataRequired, Length
-from flask_babel import _, lazy_gettext as _l
+
+from app import db
 from app.models import User
 
 
 class EditProfileForm(FlaskForm):
     username = StringField(_l('Пайдаланушы аты'), validators=[DataRequired()])
     about_me = TextAreaField(_l('Мен туралы'), validators=[Length(min=0, max=140)])
+    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
     submit = SubmitField(_l('Өзгерту'))
 
     def __init__(self, original_username, *args, **kwargs):

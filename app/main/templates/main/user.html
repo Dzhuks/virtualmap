@@ -3,7 +3,13 @@
 {% block app_content %}
     <table class="table table-hover">
         <tr>
-            <td width="256px"><img src="{{ user.avatar(256) }}"></td>
+            <td width="256px">
+				{% if user.image_file %}
+					<img width="256px" height="256px" src="{{ url_for('static', filename='img/avatars/' + user.image_file) }}">
+				{% else %}
+					<img src="{{ user.avatar(256) }}">
+				{% endif %}
+			</td>
             <td>
                 <h1>{{ _('Пайдаланушы') }}: {{ user.username }}</h1>
                 {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
@@ -12,6 +18,7 @@
                 {% endif %}
                 {% if user == current_user %}
                 <p><a href="{{ url_for('main.edit_profile') }}">{{ _('Парақшаны өзгертіңіз') }}</a></p>
+				<p><a class="btn btn-primary" role="button" href="{{ url_for('main.edit_profile') }}">{{ _('Аватарды өзгерту') }}</a></p>
                 {% endif %}
             </td>
         </tr>

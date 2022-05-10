@@ -3,7 +3,7 @@ from datetime import datetime
 from app import db
 from app.main import blueprint
 from app.main.forms import PostForm, EditProfileForm
-from app.main.helpers import lang_detect
+from app.main.helpers import lang_detect, save_picture
 from app.models import Post, User, Person, Area, Point
 from app.translate import translate
 from flask import g, flash, url_for, request, current_app, render_template, jsonify
@@ -91,6 +91,10 @@ def user(username):
 def edit_profile():
     form = EditProfileForm(current_user.username)
     if form.validate_on_submit():
+        if form.picture.data:
+            picture_file = save_picture(form.picture.data)
+            current_user.image_file = picture_file
+
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
         db.session.commit()
