@@ -115,3 +115,5 @@ Traceback (most recent call last):
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'user' is undefined
 2022-05-10 13:12:13,956 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
+2022-05-10 14:17:05,573 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
+2022-05-10 14:18:32,381 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
