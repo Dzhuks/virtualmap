@@ -1,95 +1,117 @@
-2022-04-24 13:33:33,227 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 13:33:44,781 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 13:33:52,282 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:01:03,204 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:08:25,653 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:08:31,980 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:36:03,824 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:36:25,844 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:37:26,263 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:37:33,442 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:39:18,460 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:39:41,694 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:41:43,749 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 21:42:09,910 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:18:35,990 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:20:20,881 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:20:27,713 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:20:35,204 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:21:02,567 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:22:06,291 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:23:40,736 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-04-24 22:23:48,257 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-01 17:59:35,475 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-01 17:59:41,672 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-01 18:03:39,295 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-01 18:03:46,363 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:06:13,511 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:06:29,312 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:06:36,106 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:07:04,102 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:07:15,181 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:11:36,313 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:12:20,809 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:60]
-2022-05-03 22:16:49,906 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-03 22:16:57,732 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-07 15:00:27,766 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-07 15:00:42,987 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 18:47:41,977 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 18:47:48,780 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 18:48:07,203 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 18:58:16,219 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:00:22,455 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:22:13,373 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:29:58,263 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:30:08,051 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:32:31,046 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 19:32:54,801 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 20:39:03,699 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 20:39:10,092 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 20:40:29,084 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-08 20:40:39,707 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 17:54:09,841 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 17:56:18,885 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 17:58:33,543 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 18:20:32,583 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 18:20:33,682 ERROR: Exception on / [GET] [in c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\app.py:1455]
+2022-05-10 13:05:41,327 ERROR: Exception on / [GET] [in C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py:1455]
 Traceback (most recent call last):
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: user.avatar_s
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
     response = self.full_dispatch_request()
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1521, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1861, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\routes.py", line 18, in before_request
+    if current_user.is_authenticated:
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\werkzeug\local.py", line 278, in __get__
+    obj = instance._get_current_object()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\werkzeug\local.py", line 407, in _get_current_object
+    return self.__local()  # type: ignore
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_login\utils.py", line 359, in _get_user
+    current_app.login_manager._load_user()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_login\login_manager.py", line 355, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\models.py", line 45, in load_user
+    return User.query.get(int(id))
+  File "<string>", line 2, in get
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\util\deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\orm\query.py", line 943, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\orm\query.py", line 947, in _get_impl
+    return self.session._get_impl(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2892, in _get_impl
+    return db_load_fn(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\orm\loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1692, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: user.avatar_s
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.avatar_s AS user_avatar_s, user.avatar_l AS user_avatar_l, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen 
+FROM user 
+WHERE user.id = ?]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-05-10 13:06:11,453 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
+2022-05-10 13:07:20,266 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
+2022-05-10 13:11:07,166 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
+2022-05-10 13:11:31,966 ERROR: Exception on /index [GET] [in C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
     rv = self.dispatch_request()
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "C:\Python\pythonProject\virtualmap\app\main\routes.py", line 62, in index
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\routes.py", line 62, in index
     return render_template('main/index.html', **params)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\flask\templating.py", line 149, in render_template
-    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
-    return self._load_template(name, globals)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
-    template = self.loader.load(self, name, self.make_globals(globals))
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\loaders.py", line 137, in load
-    code = environment.compile(source, name, filename)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 757, in compile
-    self.handle_exception(source=source_hint)
-  File "c:\python\pythonproject\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "C:\Python\pythonProject\virtualmap\app\main\templates\main\index.html", line 73, in template
-    <script src="{{ url_for('static', filename='js\jquery.min.js')"></script>
-jinja2.exceptions.TemplateSyntaxError: unexpected char '"' at 4074
-2022-05-09 18:21:40,366 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 18:23:13,398 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 18:23:58,046 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 18:24:40,802 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 19:12:11,733 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 19:13:14,536 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 19:15:58,514 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 21:09:40,399 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
-2022-05-09 21:09:53,629 INFO: Microblog startup [in C:\Python\pythonProject\virtualmap\app\__init__.py:63]
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\templates\main\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\templates\base.html", line 47, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\templates\main\index.html", line 68, in block 'app_content'
+    {% include "main/_posts.html" %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\templates\main\_posts.html", line 2, in top-level template code
+    {% include 'main/_post.html' %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\app\main\templates\main\_post.html", line 5, in top-level template code
+    {% if user.image_file %}
+  File "C:\Users\a-kst\PycharmProjects\virtualmap\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2022-05-10 13:12:13,956 INFO: Microblog startup [in C:\Users\a-kst\PycharmProjects\virtualmap\app\__init__.py:63]
